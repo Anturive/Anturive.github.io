@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #F3F5FC;
+}
+
+.logo{
+    margin: 30px 40px;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenedor-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Primera sección */
+
+.primer-campo{
+    width: 70%;
+}
+
+.campo-encriptar{
+    width: 100%;
+}
+
+.campo-encriptar textarea{
+    background: none;
+    height: 600px;
+    width: 80%;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+.campo-encriptar textarea::placeholder{
+    color: #0a387186;
+}
+
+span{
+    padding: 10px;
+    margin-left: 30px;
+    font-weight: 300;
+    color: #0A3871;
+}
+
+span i{
+    margin-right: 10px;
+}
+
+.buttons{
+    width: 80%;
+    display: flex;
+}
+
+.buttons button{
+    width: 45%;
+    margin: 10px 20px;
+    padding: 15px 0px;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.buttons button:first-child{
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+.buttons button:first-child:hover{
+    background: #1054a7;
+}
+
+.buttons button:last-child{
+    background: none;
+    color: #0A3871;
+}
+
+.buttons button:last-child:hover{
+    background: #b9c6d8;
+}
+
+.textarea{
+    font-size: 22px;
+    color: #0A3871;
+    font-weight: 500;
+}
+
+/* Segundo campo */
+
+.segundo-campo{
+    width: 30%;
+}
+
+.segundo-campo-div{
+    background:#FFFFFF;
+    height: 735px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;box-shadow: 0px 0px 12px -9px rgba(0,0,0,0.75);
+}
+
+.sobreponer img{
+    width: 70%;
+}
+
+#textoMostrar{
+    width:100%;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+#primerParrafo{
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#segundoParrafo{
+    font-weight: 200;
+}
+
+#copiar{
+    display: none;
+    width: 100%;
+    background: #FFFFFF;
+    margin-top: 20px;
+}
+
+#copiar:hover{
+    background: #f1f1f1;
+}
+
+/* Footer */
+
+footer{
+    padding: 20px;
+    text-align: center;
+}
+
+footer span{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media (max-width: 1199px) {
+
+    *{
+        font-size: 2vw !important;
+    }
+
+    .contenedor{
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .contenedor-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        margin: 10px 0;
+    }
+
+    .ajustar{
+        width: 100%;
+    }
+
+    .ajustar .textarea, .segundo-campo-div{
+        width: 100%;
+        height: 400px;
+    }
+
+    .segundo-campo-div{
+        position: relative;
+        padding: 10px;
+    }
+
+    .sobreponer{
+        position: absolute;
+        top: 45%;
+    }
+
+    .sobreponer img{
+        display: none;
+    }
+
+} 
+
+@media (max-width:720px){
+    *{
+        font-size: 2.5vw !important;
+    }
+
+    .logo img{
+        width: 20%;
+    }
+
+    .contenedor{
+        max-width: 70%;
+    }
+
+    span{
+        margin: 0;
+    }
+
+    .buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons button{
+        font-size: 16px;
+        width: 80% !important;
+        margin: 10px 0 !important;
+    }
+
+    .segundo-campo-div{
+        position: relative;
+        padding: 0;
+    }
+
+}
+
+@media (max-width:500px){
+    *{
+        font-size: 4vw !important;
+    }
+
+}
